@@ -1,4 +1,4 @@
-version: "3.5"
+version: "3.6"
 
 services:
   php:
@@ -7,7 +7,7 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./app:/var/www/html
+      - ../:/var/www/html
 
   mariadb:
     image: mariadb:10.4
@@ -16,7 +16,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
-      - ./databases/mariadb:/var/lib/mysql
+      - ./database/mariadb:/var/lib/mysql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
