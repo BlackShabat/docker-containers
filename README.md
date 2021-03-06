@@ -3,7 +3,7 @@ Simple docker container for LAMP stack project: php, mariadb, phpmyadmin
 
 ## install
 - cd myproject
-- git clone git@github.com:BlackShabat/lamp-docker.git docker
+- git clone git@github.com:anshabat/lamp-docker.git
 - cd docker
 - docker-compose up -d
 - cd ../
